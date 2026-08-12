@@ -1,6 +1,9 @@
-# Portfólio - Luiz Guilherme
+# Portfólios - Luiz Guilherme
 
-Portfólio pessoal estático, responsivo e sem dependências. O conteúdo foi elaborado a partir dos currículos fornecidos, do LinkedIn e dos repositórios públicos do GitHub.
+Dois portfólios estáticos, responsivos e sem dependências. O conteúdo foi elaborado a partir dos currículos, do LinkedIn e dos repositórios públicos do GitHub.
+
+- `/`: portfólio pessoal e apresentação geral.
+- `/fullstack/`: portfólio direcionado a recrutadores e vagas Full Stack.
 
 ## Visualizar
 
