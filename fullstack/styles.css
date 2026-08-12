@@ -8,3 +8,6 @@
 @media(max-width:600px){.hero h1{font-size:clamp(43px,13vw,50px)}.hero-text,.quick-info span{overflow-wrap:anywhere}.quick-info{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}}
 
 @media(max-width:600px){html,body{width:100%;max-width:100%;overflow-x:hidden}.header{width:calc(100% - 30px)}.hero{display:block;width:calc(100% - 30px);max-width:calc(100% - 30px)}.hero-copy,.hero-panel,.hero-text,.quick-info,.code-window{width:100%;max-width:100%;min-width:0}.hero-panel{margin-top:75px}.hero h1{max-width:100%;overflow-wrap:break-word}.hero-text{white-space:normal}.quick-info{display:grid}.mobile-menu{width:100vw;max-width:100vw}}
+
+/* Respiro extra para o título da seção de projetos. */
+.projects .section-top{padding-inline:clamp(14px,2.2vw,28px)}
