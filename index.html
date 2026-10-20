@@ -3,260 +3,358 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Portfólio de Luiz Guilherme Monteiro Arlindo, desenvolvedor React Native, Front-end e Full Stack em Santos, SP." />
-    <meta name="theme-color" content="#0b0d12" />
-    <meta property="og:title" content="Luiz Guilherme | Desenvolvedor de produtos digitais" />
-    <meta property="og:description" content="Apps mobile, experiências web e sistemas que conectam produto, tecnologia e pessoas." />
+    <meta name="description" content="Portfólio de Luiz Guilherme Monteiro Arlindo, desenvolvedor Full Stack em Santos, SP. Sistemas web, SaaS, ERPs com NF-e, agendamento com WhatsApp, e-commerce e apps React Native." />
+    <meta name="theme-color" content="#f6f5f1" />
+    <meta property="og:title" content="Luiz Guilherme | Desenvolvedor Full Stack" />
+    <meta property="og:description" content="Sistemas web, SaaS e apps sob medida: do requisito ao deploy. React, Next.js, React Native, Node.js e PostgreSQL." />
     <meta property="og:type" content="website" />
-    <title>Luiz Guilherme | Desenvolvedor de produtos digitais</title>
+    <meta property="og:image" content="assets/projetos/erp-petshop.jpg" />
+    <title>Luiz Guilherme | Desenvolvedor Full Stack</title>
     <link rel="icon" href="assets/luiz-guilherme.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
     <script src="script.js" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
-    <div class="noise" aria-hidden="true"></div>
 
-    <header class="site-header" id="topo">
-      <a class="brand" href="#topo" aria-label="Ir ao início">
-        <span class="brand-mark">LG</span>
-        <span class="brand-text">Luiz Guilherme</span>
-      </a>
-      <nav class="desktop-nav" aria-label="Navegação principal">
+    <header class="topbar" id="topo">
+      <a class="brand" href="#topo" aria-label="Ir ao início"><span>LG</span> Luiz Guilherme</a>
+      <nav class="nav" aria-label="Navegação principal">
         <a href="#projetos">Projetos</a>
-        <a href="#sobre">Sobre</a>
+        <a href="#servicos">Serviços</a>
         <a href="#experiencia">Experiência</a>
+        <a href="#stack">Stack</a>
       </nav>
-      <a class="header-cta" href="#contato">Vamos conversar <span aria-hidden="true">↗</span></a>
-      <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false">
-        <span></span><span></span>
-      </button>
+      <a class="btn btn-dark btn-sm" href="#contato">Contato</a>
+      <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span></button>
     </header>
 
     <nav class="mobile-nav" aria-label="Navegação mobile">
       <a href="#projetos">Projetos</a>
-      <a href="#sobre">Sobre</a>
+      <a href="#servicos">Serviços</a>
       <a href="#experiencia">Experiência</a>
+      <a href="#stack">Stack</a>
       <a href="#contato">Contato</a>
     </nav>
 
     <main id="conteudo">
-      <section class="hero section-shell" aria-labelledby="hero-title">
-        <div class="hero-copy reveal">
-          <div class="eyebrow"><span class="status-dot"></span> Disponível para novos desafios</div>
-          <h1 id="hero-title">Eu transformo ideias em <em>produtos digitais.</em></h1>
-          <p class="hero-lead">Desenvolvedor React Native, Front-end e Full Stack criando experiências mobile e web que funcionam de verdade — do primeiro toque à integração com o back-end.</p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="#projetos">Ver projetos <span aria-hidden="true">↓</span></a>
-            <a class="button button-ghost" href="assets/Luiz-Guilherme-Monteiro-Arlindo-CV.pdf" download>Baixar currículo <span aria-hidden="true">↗</span></a>
+      <section class="hero wrap">
+        <div class="hero-text reveal">
+          <p class="pill"><i class="dot"></i> Disponível para projetos freelance e vagas CLT ou PJ</p>
+          <h1>Desenvolvedor Full Stack que entrega <em>sistemas em produção.</em></h1>
+          <p class="lead">Desenvolvo sistemas web, plataformas SaaS e apps Android/iOS sob medida, do levantamento de requisitos ao deploy. ERPs com emissão de NF-e, agendamento com WhatsApp, e-commerce e marketplaces com Stripe, Pix e Mercado Pago.</p>
+          <div class="actions">
+            <a class="btn btn-accent" href="#projetos">Ver projetos <span aria-hidden="true">↓</span></a>
+            <a class="btn btn-line" href="assets/Luiz-Guilherme-Monteiro-Arlindo-CV.pdf" download>Baixar currículo <span aria-hidden="true">↗</span></a>
           </div>
         </div>
-
-        <div class="hero-visual reveal" data-delay="1">
-          <div class="portrait-frame">
-            <div class="portrait-orbit orbit-one"></div>
-            <div class="portrait-orbit orbit-two"></div>
-            <img src="assets/luiz-guilherme.jpg" alt="Luiz Guilherme Monteiro Arlindo" />
-            <span class="portrait-label label-code">&lt;/&gt;</span>
-            <span class="portrait-label label-rn">RN</span>
-          </div>
-          <div class="location-card">
-            <span class="location-icon" aria-hidden="true">⌖</span>
-            <span><strong>Santos, SP</strong><small>Brasil · GMT-3</small></span>
-          </div>
-        </div>
-
-        <div class="hero-metrics reveal" data-delay="2" aria-label="Resumo profissional">
-          <div><strong>4+</strong><span>anos criando<br />produtos digitais</span></div>
-          <div><strong>18</strong><span>repositórios<br />públicos</span></div>
-          <div><strong>iOS<br />Android</strong><span>experiência<br />multiplataforma</span></div>
-        </div>
-      </section>
-
-      <section class="marquee" aria-label="Tecnologias">
-        <div class="marquee-track">
-          <span>React Native</span><i></i><span>TypeScript</span><i></i><span>React</span><i></i><span>Node.js</span><i></i><span>Expo</span><i></i><span>APIs REST</span><i></i><span>React Native</span><i></i><span>TypeScript</span><i></i><span>React</span><i></i><span>Node.js</span><i></i><span>Expo</span><i></i><span>APIs REST</span>
-        </div>
-      </section>
-
-      <section class="projects section-shell" id="projetos" aria-labelledby="projects-title">
-        <div class="section-heading reveal">
+        <aside class="hero-card reveal" data-delay="1">
+          <img src="assets/luiz-guilherme.jpg" alt="Luiz Guilherme Monteiro Arlindo" width="120" height="120" />
           <div>
-            <span class="section-index">01 / Projetos selecionados</span>
-            <h2 id="projects-title">Trabalho que<br /><em>gera movimento.</em></h2>
+            <strong>Luiz Guilherme Monteiro Arlindo</strong>
+            <span>Engenheiro da Computação · Santos, SP</span>
           </div>
-          <p>Uma seleção de aplicativos e experiências web que mostram como penso produto, interface e engenharia.</p>
+          <ul class="hero-facts">
+            <li><b>4+</b><span>anos com produtos digitais</span></li>
+            <li><b>15+</b><span>sistemas e sites entregues</span></li>
+            <li><b>Web</b><span>e mobile, do front ao banco</span></li>
+          </ul>
+        </aside>
+      </section>
+
+      <div class="ticker" aria-hidden="true">
+        <div class="ticker-track">
+          <span>Next.js</span><span>React</span><span>React Native</span><span>TypeScript</span><span>Node.js</span><span>PostgreSQL</span><span>Prisma</span><span>Stripe</span><span>WhatsApp API</span><span>NF-e</span>
+          <span>Next.js</span><span>React</span><span>React Native</span><span>TypeScript</span><span>Node.js</span><span>PostgreSQL</span><span>Prisma</span><span>Stripe</span><span>WhatsApp API</span><span>NF-e</span>
+        </div>
+      </div>
+
+      <section class="wrap section" id="projetos" aria-labelledby="projetos-titulo">
+        <div class="section-head reveal">
+          <span class="kicker">01 · Projetos</span>
+          <h2 id="projetos-titulo">O que eu já <em>construí.</em></h2>
+          <p>Sistemas entregues a clientes, produtos em produção e projetos próprios. Cada card mostra o que foi feito e com qual tecnologia.</p>
         </div>
 
-        <article class="project-card project-featured reveal">
-          <div class="project-art art-sync" aria-hidden="true">
-            <div class="phone phone-main">
-              <div class="phone-bar"></div>
-              <div class="app-head"><b>LS</b><span>LançaSync</span><i></i></div>
-              <p>Olá, Luiz</p>
-              <strong>Seus lançamentos</strong>
-              <div class="sync-status"><span>✓</span> Tudo sincronizado</div>
-              <div class="entry"><i class="entry-in">↗</i><span><b>Venda registrada</b><small>Hoje, 14:32</small></span><strong>R$ 450</strong></div>
-              <div class="entry"><i class="entry-out">↙</i><span><b>Compra registrada</b><small>Ontem, 09:10</small></span><strong>R$ 120</strong></div>
-              <div class="phone-tabs"><i></i><i></i><i></i></div>
-            </div>
-            <div class="sync-badge"><span>↻</span><b>Offline first</b><small>Sincroniza quando voltar</small></div>
-          </div>
-          <div class="project-info">
-            <div class="project-number">01</div>
-            <div>
-              <span class="project-type">Mobile · Full Stack · 2026</span>
-              <h3>LançaSync</h3>
-              <p>Aplicativo para registrar compras e vendas com fotos, mesmo sem internet. Os dados ficam no dispositivo e sincronizam com uma API multiempresa quando a conexão retorna.</p>
-              <ul class="tags" aria-label="Tecnologias do projeto">
-                <li>React Native</li><li>TypeScript</li><li>WatermelonDB</li><li>Node.js</li><li>MySQL</li>
+        <div class="filters reveal" role="tablist" aria-label="Filtrar projetos">
+          <button class="active" data-filter="todos" type="button">Todos</button>
+          <button data-filter="sistemas" type="button">Sistemas e SaaS</button>
+          <button data-filter="sites" type="button">Sites e e-commerce</button>
+          <button data-filter="mobile" type="button">Mobile</button>
+        </div>
+
+        <div class="featured">
+          <article class="case reveal" data-cat="sistemas">
+            <a class="case-media" href="https://www.psicologiaconectada.website" target="_blank" rel="noreferrer"><img src="assets/projetos/psicologia.jpg" alt="Página inicial da Psicologia Conecta" loading="lazy" /></a>
+            <div class="case-body">
+              <span class="meta">SaaS · Em produção com assinantes · 2026</span>
+              <h3>Psicologia Conecta</h3>
+              <p>Plataforma SaaS freemium de bem-estar que conecta pacientes a psicólogos com perfil verificado.</p>
+              <ul class="checks">
+                <li>Assinaturas recorrentes com Stripe e área do assinante</li>
+                <li>Cadastro de profissionais com envio de documentos e fluxo de verificação</li>
+                <li>Busca de profissionais por especialidade, modalidade, cidade e valor, com mapa</li>
+                <li>Diário de humor, conteúdos premium, recursos de IA e painel administrativo</li>
               </ul>
-              <a class="text-link" href="https://github.com/lgma1302sfcpo/Lan-aSync" target="_blank" rel="noreferrer">Ver código no GitHub <span aria-hidden="true">↗</span></a>
-            </div>
-          </div>
-        </article>
-
-        <div class="project-grid">
-          <article class="project-card reveal">
-            <div class="project-art art-barber" aria-hidden="true">
-              <div class="barber-page">
-                <div class="barber-nav"><b>WS</b><i></i><i></i><button>Agendar</button></div>
-                <p>ESTILO. PRECISÃO. ATITUDE.</p>
-                <strong>Seu visual,<br />sua assinatura.</strong>
-                <span>Barbearia e produtos profissionais.</span>
-                <button>Conhecer serviços</button>
-              </div>
-              <div class="checkout-pill"><span>✓</span> Pagamento seguro</div>
-            </div>
-            <div class="project-info compact">
-              <span class="project-type">Web · E-commerce · 2026</span>
-              <h3>Barbershop WS</h3>
-              <p>E-commerce completo com painel administrativo, estoque, frete e pagamentos via Stripe.</p>
-              <ul class="tags"><li>React</li><li>Express</li><li>PostgreSQL</li><li>Stripe</li></ul>
-              <div class="project-links">
-                <a class="text-link" href="https://barbeariaws.vercel.app" target="_blank" rel="noreferrer">Visitar site ↗</a>
-                <a class="text-link subtle" href="https://github.com/lgma1302sfcpo/barbeariaws" target="_blank" rel="noreferrer">GitHub ↗</a>
-              </div>
+              <ul class="tags"><li>Next.js</li><li>TypeScript</li><li>Prisma</li><li>PostgreSQL</li><li>Stripe</li><li>Resend</li><li>Claude API</li></ul>
+              <div class="links"><a href="https://www.psicologiaconectada.website" target="_blank" rel="noreferrer">Ver site ↗</a></div>
             </div>
           </article>
 
-          <article class="project-card reveal" data-delay="1">
-            <div class="project-art art-driver" aria-hidden="true">
-              <div class="map-grid"></div>
-              <div class="route route-a"></div><div class="route route-b"></div>
-              <div class="map-pin pin-a"><i></i></div><div class="map-pin pin-b"><i></i></div>
-              <div class="driver-phone">
-                <div class="mini-map"><span></span><i></i></div>
-                <b>Motorista a caminho</b><small>Chegada em 4 minutos</small>
-                <div class="driver-row"><i></i><span><b>Carlos</b><small>4.9 ★</small></span><strong>ABC-1D23</strong></div>
-              </div>
+          <article class="case reveal" data-cat="sistemas">
+            <div class="case-media duo">
+              <img src="assets/projetos/erp-petshop.jpg" alt="Página do sistema de gestão para pet shops" loading="lazy" />
+              <img class="float" src="assets/projetos/erp-agenda.jpg" alt="Tela de novo agendamento de banho e tosa no ERP" loading="lazy" />
             </div>
-            <div class="project-info compact">
-              <span class="project-type">Mobile · Tempo real · 2025</span>
-              <h3>GoDriver</h3>
-              <p>Ecossistema mobile de mobilidade com mapas, localização e atualizações em tempo real.</p>
-              <ul class="tags"><li>Expo</li><li>Maps</li><li>Socket.io</li><li>MongoDB</li></ul>
-              <div class="project-links">
-                <a class="text-link" href="https://github.com/lgma1302sfcpo/godriver-app" target="_blank" rel="noreferrer">App no GitHub ↗</a>
-                <a class="text-link subtle" href="https://github.com/lgma1302sfcpo/godriver-server" target="_blank" rel="noreferrer">API ↗</a>
-              </div>
+            <div class="case-body">
+              <span class="meta">ERP · Entregue para clientes · 2026</span>
+              <h3>ERP para pet shops com emissão fiscal</h3>
+              <p>Sistema de gestão multiempresa usado no dia a dia de pet shops.</p>
+              <ul class="checks">
+                <li>PDV, caixa, estoque, clientes e pets, financeiro e relatórios em PDF e Excel</li>
+                <li>Agenda de banho e tosa com cálculo automático do horário de término</li>
+                <li>Emissão de NF-e e NFC-e com assinatura digital do XML (certificado A1)</li>
+                <li>Usuários, cargos e permissões (RBAC), Clean Architecture e testes com Vitest</li>
+              </ul>
+              <ul class="tags"><li>Next.js</li><li>TypeScript</li><li>Prisma</li><li>PostgreSQL</li><li>NextAuth</li><li>Zod</li><li>Vitest</li></ul>
+              <div class="links"><a href="https://sellpetshop.vercel.app" target="_blank" rel="noreferrer">Página do sistema ↗</a></div>
+            </div>
+          </article>
+
+          <article class="case reveal" data-cat="sistemas">
+            <a class="case-media" href="https://barbearia-agendamento-lovat.vercel.app" target="_blank" rel="noreferrer"><img src="assets/projetos/atelier-barber.jpg" alt="Tela de agendamento online da Atelier Barber" loading="lazy" /></a>
+            <div class="case-body">
+              <span class="meta">Agendamento · Entregue para cliente · 2026</span>
+              <h3>Atelier Barber</h3>
+              <p>Agendamento online para barbearia: o cliente marca pelo site e o barbeiro confirma pelo painel ou pelo WhatsApp.</p>
+              <ul class="checks">
+                <li>Fluxo público em 4 etapas, sem o cliente precisar criar conta</li>
+                <li>WhatsApp Cloud API com botões, webhook validado com HMAC e outbox</li>
+                <li>Sem agendamento duplo: transações SERIALIZABLE e exclusão com índice GiST</li>
+                <li>Testes unitários, de integração e E2E no celular e no desktop com Playwright</li>
+              </ul>
+              <ul class="tags"><li>Next.js</li><li>TypeScript</li><li>Prisma</li><li>PostgreSQL</li><li>WhatsApp API</li><li>Playwright</li></ul>
+              <div class="links"><a href="https://barbearia-agendamento-lovat.vercel.app" target="_blank" rel="noreferrer">Ver demonstração ↗</a></div>
+            </div>
+          </article>
+
+          <article class="case reveal" data-cat="sistemas">
+            <a class="case-media" href="https://reserva-pet.vercel.app" target="_blank" rel="noreferrer"><img src="assets/projetos/reserva-pet.jpg" alt="Página inicial do marketplace Reserva Pet" loading="lazy" /></a>
+            <div class="case-body">
+              <span class="meta">Marketplace · Projeto · 2026</span>
+              <h3>Reserva Pet</h3>
+              <p>Marketplace de hotéis, creches e serviços pet com reserva e pagamento online.</p>
+              <ul class="checks">
+                <li>Busca de estabelecimentos por tipo de cuidado e região, com Google Maps</li>
+                <li>Pagamento com cartão (Stripe) e Pix (Efí)</li>
+                <li>Fotos em AWS S3 com URLs pré-assinadas e filas com BullMQ e Redis</li>
+              </ul>
+              <ul class="tags"><li>Next.js</li><li>Drizzle ORM</li><li>PostgreSQL</li><li>Redis</li><li>Stripe</li><li>AWS S3</li></ul>
+              <div class="links"><a href="https://reserva-pet.vercel.app" target="_blank" rel="noreferrer">Ver site ↗</a></div>
             </div>
           </article>
         </div>
 
-        <article class="project-card project-horizontal reveal">
-          <div class="project-info">
-            <div class="project-number">04</div>
-            <div>
-              <span class="project-type">Produto real · Mobile + Web</span>
-              <h3>PetYouGo</h3>
-              <p>Plataforma de serviços pet que conecta tutores a hotéis, creches e prestadores. Atuei em jornadas de cadastro, reservas, agenda, pagamentos e telas administrativas.</p>
-              <ul class="tags"><li>React Native</li><li>TypeScript</li><li>APIs REST</li><li>Pagamentos</li><li>CakePHP</li></ul>
-              <a class="text-link" href="https://www.linkedin.com/in/luiz-guilherme-monteiro-arlindo-b0824b215/" target="_blank" rel="noreferrer">Ver projeto no LinkedIn <span aria-hidden="true">↗</span></a>
-            </div>
-          </div>
-          <div class="project-art art-pet" aria-hidden="true">
-            <div class="pet-blob blob-one"></div><div class="pet-blob blob-two"></div>
-            <div class="pet-card pet-search"><span>⌕</span><b>Encontre o cuidado ideal</b><small>Hotéis · Creches · Banho e tosa</small></div>
-            <div class="pet-card pet-booking"><span>✓</span><div><b>Reserva confirmada</b><small>Thor · 14 a 16 de agosto</small></div></div>
-            <div class="paw"><i></i><i></i><i></i><i></i><b></b></div>
-          </div>
-        </article>
+        <div class="grid">
+          <article class="card reveal" data-cat="sistemas">
+            <a class="card-media" href="https://petflow-saas.vercel.app" target="_blank" rel="noreferrer"><img src="assets/projetos/petflow.jpg" alt="Tela de login do PetFlow" loading="lazy" /></a>
+            <span class="meta">SaaS · 2026</span>
+            <h3>PetFlow</h3>
+            <p>SaaS multiempresa para redes de pet shops: empresas, planos, lojas, PDV com pagamento dividido, agenda de banho e tosa e importação de dados.</p>
+            <ul class="tags"><li>Next.js</li><li>PostgreSQL</li><li>Docker</li></ul>
+            <div class="links"><a href="https://petflow-saas.vercel.app" target="_blank" rel="noreferrer">Site ↗</a><a href="https://github.com/lgma1302sfcpo/petflow-saas" target="_blank" rel="noreferrer">GitHub ↗</a></div>
+          </article>
+
+          <article class="card reveal" data-cat="sites" data-delay="1">
+            <a class="card-media" href="https://barbeariaws.vercel.app" target="_blank" rel="noreferrer"><img src="assets/projetos/barbershop-ws.jpg" alt="Site da Barbershop WS" loading="lazy" /></a>
+            <span class="meta">Site + loja · Cliente · 2026</span>
+            <h3>Barbershop WS</h3>
+            <p>Site com loja online: checkout com Stripe, frete, estoque atualizado por webhook após o pagamento e painel de pedidos.</p>
+            <ul class="tags"><li>React</li><li>Express</li><li>Prisma</li><li>Stripe</li></ul>
+            <div class="links"><a href="https://barbeariaws.vercel.app" target="_blank" rel="noreferrer">Site ↗</a><a href="https://github.com/lgma1302sfcpo/barbeariaws" target="_blank" rel="noreferrer">GitHub ↗</a></div>
+          </article>
+
+          <article class="card reveal" data-cat="sistemas" data-delay="2">
+            <a class="card-media" href="https://sistema-de-entregas-rho.vercel.app" target="_blank" rel="noreferrer"><img src="assets/projetos/delivery.jpg" alt="Cardápio online do sistema de delivery" loading="lazy" /></a>
+            <span class="meta">Delivery · Projeto · 2026</span>
+            <h3>Delivery para loja única</h3>
+            <p>Cardápio online, carrinho, checkout com entrega ou retirada, pagamento com Mercado Pago e fila de pedidos da loja.</p>
+            <ul class="tags"><li>Node.js</li><li>JavaScript</li><li>Mercado Pago</li></ul>
+            <div class="links"><a href="https://sistema-de-entregas-rho.vercel.app" target="_blank" rel="noreferrer">Site ↗</a></div>
+          </article>
+
+          <article class="card reveal" data-cat="sites">
+            <a class="card-media" href="https://pet-shop-casa-dos-bichos.vercel.app" target="_blank" rel="noreferrer"><img src="assets/projetos/casa-dos-bichos.jpg" alt="Site da Casa dos Bichos Pet Shop" loading="lazy" /></a>
+            <span class="meta">Site · Cliente · 2026</span>
+            <h3>Casa dos Bichos Pet Shop</h3>
+            <p>Site com catálogo de produtos, banho e tosa, páginas das lojas, WhatsApp e área administrativa para editar produtos.</p>
+            <ul class="tags"><li>Next.js</li><li>Prisma</li><li>SEO</li></ul>
+            <div class="links"><a href="https://pet-shop-casa-dos-bichos.vercel.app" target="_blank" rel="noreferrer">Site ↗</a></div>
+          </article>
+
+          <article class="card reveal" data-cat="sites" data-delay="1">
+            <a class="card-media" href="https://landing-telhados.vercel.app" target="_blank" rel="noreferrer"><img src="assets/projetos/telhados.jpg" alt="Landing page da R.E.B Telhados e Reformas" loading="lazy" /></a>
+            <span class="meta">Landing page · Cliente · 2026</span>
+            <h3>R.E.B Telhados &amp; Reformas</h3>
+            <p>Landing page com serviços, antes e depois, regiões atendidas, avaliações, FAQ, orçamento por WhatsApp e SEO local.</p>
+            <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>SEO</li></ul>
+            <div class="links"><a href="https://landing-telhados.vercel.app" target="_blank" rel="noreferrer">Site ↗</a></div>
+          </article>
+
+          <article class="card reveal" data-cat="mobile" data-delay="2">
+            <div class="card-media"><img src="assets/projetos/petyougo.jpg" alt="Ilustração do app Pet You Go" loading="lazy" /></div>
+            <span class="meta">App · Pet You Go! · 2022–2026</span>
+            <h3>App de serviços pet</h3>
+            <p>App Android e iOS de hospedagem, creche e serviços pet: login social, reservas, pagamentos, mapas, upload de fotos e push.</p>
+            <ul class="tags"><li>React Native</li><li>Expo</li><li>TypeScript</li><li>Zustand</li></ul>
+          </article>
+
+          <article class="card reveal" data-cat="mobile">
+            <div class="card-media"><img src="assets/projetos/lancasync.jpg" alt="Ilustração do app LançaSync" loading="lazy" /></div>
+            <span class="meta">App · Offline-first · 2026</span>
+            <h3>LançaSync</h3>
+            <p>Registro de compras e vendas com fotos que funciona sem internet e sincroniza com uma API multiempresa quando a conexão volta.</p>
+            <ul class="tags"><li>React Native</li><li>WatermelonDB</li><li>Node.js</li><li>MySQL</li></ul>
+            <div class="links"><a href="https://github.com/lgma1302sfcpo/Lan-aSync" target="_blank" rel="noreferrer">GitHub ↗</a></div>
+          </article>
+
+          <article class="card reveal" data-cat="mobile" data-delay="1">
+            <div class="card-media"><img src="assets/projetos/godriver.jpg" alt="Ilustração do app GoDriver" loading="lazy" /></div>
+            <span class="meta">App · Tempo real · 2025</span>
+            <h3>GoDriver</h3>
+            <p>App de mobilidade com mapas, geolocalização e posição em tempo real via Socket.io, com API própria e autenticação JWT.</p>
+            <ul class="tags"><li>Expo</li><li>Socket.io</li><li>Express</li><li>MongoDB</li></ul>
+            <div class="links"><a href="https://github.com/lgma1302sfcpo/godriver-app" target="_blank" rel="noreferrer">App ↗</a><a href="https://github.com/lgma1302sfcpo/godriver-server" target="_blank" rel="noreferrer">API ↗</a></div>
+          </article>
+
+          <article class="card reveal" data-cat="mobile" data-delay="2">
+            <div class="card-media"><img src="assets/projetos/opsport.jpg" alt="Ilustração do app Operations Port" loading="lazy" /></div>
+            <span class="meta">App · Desafio técnico</span>
+            <h3>Operations Port</h3>
+            <p>Gestão de operações logísticas portuárias: CRUD, reordenação por arrastar e soltar, filtros e API mockada no Render.</p>
+            <ul class="tags"><li>React Native</li><li>Expo Router</li><li>Zustand</li></ul>
+            <div class="links"><a href="https://github.com/lgma1302sfcpo/teste-candidato-aplicativo" target="_blank" rel="noreferrer">GitHub ↗</a></div>
+          </article>
+
+          <article class="card reveal" data-cat="sistemas">
+            <div class="card-media"><img src="assets/projetos/medwatch.jpg" alt="Ilustração do sistema MedWatch" loading="lazy" /></div>
+            <span class="meta">TCC · IoT · 2026</span>
+            <h3>MedWatch</h3>
+            <p>Triagem e monitoramento de pacientes com pulseira ESP32, classificação de risco pelo Protocolo de Manchester e painel de acompanhamento.</p>
+            <ul class="tags"><li>Python</li><li>Flask</li><li>ESP32</li><li>SQLite</li></ul>
+          </article>
+
+          <article class="card reveal" data-cat="sistemas" data-delay="1">
+            <div class="card-media"><img src="assets/projetos/vendas.jpg" alt="Ilustração do sistema de gestão de vendas" loading="lazy" /></div>
+            <span class="meta">Sistema web · PHP</span>
+            <h3>Gestão de Vendas</h3>
+            <p>Cadastro, edição e exclusão de vendas com geração de relatórios em PDF.</p>
+            <ul class="tags"><li>PHP 8</li><li>Laravel</li><li>MySQL</li></ul>
+            <div class="links"><a href="https://github.com/lgma1302sfcpo/sales-challenge-and-pdf" target="_blank" rel="noreferrer">GitHub ↗</a></div>
+          </article>
+
+          <article class="card card-text reveal" data-cat="sites" data-delay="2">
+            <span class="meta">Sites · Negócios locais</span>
+            <h3>Mais landing pages</h3>
+            <p>Sites de conversão para churrascaria a domicílio, ar-condicionado, catálogo de veículos com painel de cadastro, esmaltaria e outros negócios locais.</p>
+            <ul class="checks">
+              <li>Foco em contato pelo WhatsApp</li>
+              <li>SEO com sitemap, robots e metadados</li>
+              <li>Animações com GSAP e Framer Motion</li>
+              <li>Deploy contínuo na Vercel</li>
+            </ul>
+            <ul class="tags"><li>Next.js</li><li>Tailwind</li><li>GSAP</li></ul>
+          </article>
+        </div>
       </section>
 
-      <section class="about section-shell" id="sobre" aria-labelledby="about-title">
-        <div class="about-intro reveal">
-          <span class="section-index">02 / Sobre mim</span>
-          <h2 id="about-title">Produto bom nasce quando <em>código e contexto</em> trabalham juntos.</h2>
-        </div>
-        <div class="about-grid">
-          <div class="about-copy reveal">
-            <p class="large-copy">Sou desenvolvedor e bacharel em Engenharia da Computação. Gosto de entender o problema por inteiro, criar interfaces claras e conectar cada detalhe a uma solução confiável.</p>
-            <p>Nos últimos anos, trabalhei com fluxos de autenticação, reservas, pagamentos, mapas, uploads, notificações e dados estruturados. Essa visão ponta a ponta me ajuda a conversar com produto, design e back-end sem perder o foco no usuário.</p>
-            <a class="text-link" href="mailto:lgma86932@gmail.com">Fale comigo por e-mail <span aria-hidden="true">↗</span></a>
+      <section class="band" id="servicos" aria-labelledby="servicos-titulo">
+        <div class="wrap">
+          <div class="section-head reveal">
+            <span class="kicker">02 · Serviços</span>
+            <h2 id="servicos-titulo">O que eu <em>entrego.</em></h2>
           </div>
-          <div class="principles reveal" data-delay="1">
-            <div><span>01</span><p><strong>Clareza antes de complexidade</strong><small>Soluções simples de usar e fáceis de manter.</small></p></div>
-            <div><span>02</span><p><strong>Qualidade em cada entrega</strong><small>Teste, consistência e atenção aos detalhes.</small></p></div>
-            <div><span>03</span><p><strong>Evolução contínua</strong><small>Curiosidade para aprender e melhorar o produto.</small></p></div>
+          <div class="services reveal">
+            <article><span>01</span><h3>Sistemas de gestão</h3><p>PDV, caixa, estoque, financeiro, relatórios e emissão de NF-e e NFC-e.</p></article>
+            <article><span>02</span><h3>Plataformas SaaS</h3><p>Assinaturas recorrentes, área do cliente, painel administrativo e multiempresa.</p></article>
+            <article><span>03</span><h3>Agendamento online</h3><p>Agenda por profissional com confirmação automática pelo WhatsApp.</p></article>
+            <article><span>04</span><h3>E-commerce e marketplaces</h3><p>Checkout com Stripe, Pix e Mercado Pago, frete e controle de estoque.</p></article>
+            <article><span>05</span><h3>Apps Android e iOS</h3><p>React Native com Expo, inclusive offline-first, publicados nas lojas.</p></article>
+            <article><span>06</span><h3>Sites e landing pages</h3><p>Rápidos, com SEO e foco em contato pelo WhatsApp.</p></article>
           </div>
         </div>
       </section>
 
-      <section class="stack section-shell" aria-labelledby="stack-title">
-        <div class="section-heading reveal">
-          <div><span class="section-index">03 / Ferramentas</span><h2 id="stack-title">Da interface<br /><em>à infraestrutura.</em></h2></div>
-          <p>Uma base técnica versátil para desenvolver, integrar, testar e publicar produtos digitais.</p>
+      <section class="wrap section" id="experiencia" aria-labelledby="experiencia-titulo">
+        <div class="section-head reveal">
+          <span class="kicker">03 · Experiência</span>
+          <h2 id="experiencia-titulo">Onde eu já <em>trabalhei.</em></h2>
         </div>
-        <div class="stack-grid reveal">
-          <article><span class="stack-icon">M</span><h3>Mobile</h3><p>React Native, Expo, Expo Router, React Navigation, EAS Build, AsyncStorage</p></article>
-          <article><span class="stack-icon">F</span><h3>Front-end</h3><p>React, Next.js, Vite, TypeScript, JavaScript, HTML, CSS, responsividade</p></article>
-          <article><span class="stack-icon">B</span><h3>Back-end & dados</h3><p>Node.js, Express, PHP, APIs REST, JWT, MySQL, PostgreSQL, MongoDB, Firebase</p></article>
-          <article><span class="stack-icon">W</span><h3>Workflow</h3><p>Git, Bitbucket, Postman, Figma, testes manuais, debugging e publicação</p></article>
+        <ol class="timeline">
+          <li class="reveal">
+            <time>Abr 2026 — atual</time>
+            <div><h3>Desenvolvedor Full Stack</h3><span>Freelancer · Remoto</span><p>Sistemas web, SaaS e sites sob medida para pequenos negócios: ERP com NF-e, agendamento com WhatsApp, marketplaces, e-commerce e landing pages, do requisito ao deploy.</p></div>
+          </li>
+          <li class="reveal">
+            <time>Jan 2022 — Ago 2026</time>
+            <div><h3>Desenvolvedor Front-end / Mobile</h3><span>Pet You Go!</span><p>App React Native + Expo para Android e iOS, incluindo a reescrita da versão 2 com Expo Router, Zustand e EAS. Login com Google e Apple, reservas, pagamentos, mapas, upload de imagens e notificações push. Manutenção de telas administrativas em PHP/CakePHP.</p></div>
+          </li>
+          <li class="reveal">
+            <time>Nov 2022 — Mai 2026</time>
+            <div><h3>Desenvolvedor de Software</h3><span>ALM Brasil</span><p>Desenvolvimento de aplicações web e mobile, integração com APIs REST, testes e manutenção de funcionalidades.</p></div>
+          </li>
+          <li class="reveal">
+            <time>Nov 2023 — Jul 2024</time>
+            <div><h3>Full Stack Developer</h3><span>Xcelsz · Londres (remoto)</span><p>Aplicações web full stack, interfaces responsivas, consumo e desenvolvimento de APIs REST em equipe multidisciplinar.</p></div>
+          </li>
+          <li class="reveal">
+            <time>2021 — 2022</time>
+            <div><h3>Estágio em TI</h3><span>ALM Brasil</span><p>Apoio no desenvolvimento de aplicações web e Android, interfaces com HTML, CSS e JavaScript e integração com APIs REST.</p></div>
+          </li>
+        </ol>
+      </section>
+
+      <section class="wrap section" id="stack" aria-labelledby="stack-titulo">
+        <div class="section-head reveal">
+          <span class="kicker">04 · Stack</span>
+          <h2 id="stack-titulo">Ferramentas do <em>dia a dia.</em></h2>
+        </div>
+        <div class="stack reveal">
+          <div><h3>Front-end</h3><p>React, Next.js, TypeScript, JavaScript, Tailwind CSS, shadcn/ui, React Query, React Hook Form, Zod, GSAP, Framer Motion</p></div>
+          <div><h3>Mobile</h3><p>React Native, Expo, Expo Router, EAS Build, React Navigation, Zustand, WatermelonDB, AsyncStorage</p></div>
+          <div><h3>Back-end</h3><p>Node.js, Express, Next.js API, PHP, Laravel, CakePHP, Python, Flask, APIs REST, JWT, Socket.io</p></div>
+          <div><h3>Dados</h3><p>PostgreSQL, MySQL, MongoDB, SQLite, Redis, Prisma, Drizzle ORM, BullMQ</p></div>
+          <div><h3>Integrações</h3><p>Stripe, Mercado Pago, Pix (Efí), Asaas, WhatsApp Cloud API, NF-e/NFC-e (SEFAZ), Google Maps, AWS S3, Resend, Claude API</p></div>
+          <div><h3>Qualidade e deploy</h3><p>Vitest, Testing Library, Playwright, ESLint, Git, GitHub, Bitbucket, Docker, Vercel</p></div>
+        </div>
+
+        <div class="edu reveal">
+          <div><span class="kicker">Formação</span><h3>Engenharia da Computação</h3><p>Bacharelado · Faculdade ESAMC Santos · 2021–2026</p></div>
+          <div><span class="kicker">Idiomas</span><h3>Inglês avançado</h3><p>Curso completo · CNA Idiomas</p></div>
+          <div><span class="kicker">Cursos</span><h3>Certificações</h3><p>React Native (Android e iOS) · ISO 27001 · Lógica de Programação (Fundação Bradesco)</p></div>
         </div>
       </section>
 
-      <section class="experience section-shell" id="experiencia" aria-labelledby="experience-title">
-        <div class="experience-header reveal">
-          <span class="section-index">04 / Experiência</span>
-          <h2 id="experience-title">Caminho<br /><em>profissional.</em></h2>
-        </div>
-        <div class="timeline">
-          <article class="timeline-item reveal">
-            <div class="timeline-date">Ago 2021 — Atual</div>
-            <div class="timeline-dot"></div>
-            <div><span>PetYouGo</span><h3>Desenvolvedor Front-end / Mobile</h3><p>Desenvolvimento de aplicativos Android e iOS, componentes reutilizáveis e fluxos conectados a APIs. Implementação de geolocalização, mapas, upload de imagens, notificações e pagamentos.</p></div>
-          </article>
-          <article class="timeline-item reveal">
-            <div class="timeline-date">Nov 2023 — Jul 2024</div>
-            <div class="timeline-dot"></div>
-            <div><span>Xcelsz</span><h3>Full Stack Developer</h3><p>Aplicações web responsivas, integração entre front-end e back-end, APIs REST, manutenção de funcionalidades e correção de bugs em equipe multidisciplinar.</p></div>
-          </article>
-          <article class="timeline-item reveal">
-            <div class="timeline-date">2021 — 2026</div>
-            <div class="timeline-dot"></div>
-            <div><span>ESAMC Santos</span><h3>Bacharelado em Engenharia da Computação</h3><p>Formação concluída, combinando fundamentos de engenharia, software, dados e resolução estruturada de problemas.</p></div>
-          </article>
-        </div>
-      </section>
-
-      <section class="contact section-shell" id="contato" aria-labelledby="contact-title">
-        <div class="contact-orbit" aria-hidden="true"></div>
-        <span class="section-index reveal">05 / Contato</span>
-        <h2 id="contact-title" class="reveal">Tem uma ideia<br />em mente? <em>Vamos criar.</em></h2>
-        <p class="reveal">Estou aberto a oportunidades em React Native, Front-end e Full Stack, além de projetos freelancer.</p>
-        <a class="contact-email reveal" href="mailto:lgma86932@gmail.com">lgma86932@gmail.com <span aria-hidden="true">↗</span></a>
-        <div class="contact-links reveal">
-          <a href="https://github.com/lgma1302sfcpo" target="_blank" rel="noreferrer">GitHub ↗</a>
-          <a href="https://www.linkedin.com/in/luiz-guilherme-monteiro-arlindo-b0824b215/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
-          <a href="https://wa.me/5513997688584" target="_blank" rel="noreferrer">WhatsApp ↗</a>
+      <section class="contact" id="contato" aria-labelledby="contato-titulo">
+        <div class="wrap">
+          <span class="kicker reveal">05 · Contato</span>
+          <h2 id="contato-titulo" class="reveal">Tem um projeto ou uma vaga? <em>Vamos conversar.</em></h2>
+          <a class="mail reveal" href="mailto:lgma86932@gmail.com">lgma86932@gmail.com ↗</a>
+          <div class="contact-links reveal">
+            <a href="https://wa.me/5513997688584" target="_blank" rel="noreferrer">WhatsApp ↗</a>
+            <a href="https://www.linkedin.com/in/luiz-guilherme-monteiro-arlindo-b0824b215/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+            <a href="https://github.com/lgma1302sfcpo" target="_blank" rel="noreferrer">GitHub ↗</a>
+            <a href="assets/Luiz-Guilherme-Monteiro-Arlindo-CV.pdf" download>Currículo (PDF) ↗</a>
+          </div>
         </div>
       </section>
     </main>
 
-    <footer class="site-footer">
-      <span>© <span id="year"></span> Luiz Guilherme</span>
-      <span>Projetado para causar uma boa primeira impressão.</span>
+    <footer class="footer wrap">
+      <span>© <span id="ano"></span> Luiz Guilherme Monteiro Arlindo</span>
       <a href="#topo">Voltar ao topo ↑</a>
     </footer>
   </body>

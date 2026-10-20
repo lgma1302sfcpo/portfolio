@@ -1,13 +1,12 @@
-# Portfólios - Luiz Guilherme
+# Portfólio - Luiz Guilherme
 
-Dois portfólios estáticos, responsivos e sem dependências. O conteúdo foi elaborado a partir dos currículos, do LinkedIn e dos repositórios públicos do GitHub.
+Portfólio estático, responsivo e sem build. Reúne projetos, serviços, experiência, stack e o currículo em PDF (`assets/Luiz-Guilherme-Monteiro-Arlindo-CV.pdf`).
 
-- `/`: portfólio pessoal e apresentação geral.
-- `/fullstack/`: portfólio direcionado a recrutadores e vagas Full Stack.
+- `/`: portfólio.
+- `/fullstack/`: endereço antigo, redireciona para `/`.
+- `assets/projetos/`: imagens dos projetos.
 
 ## Visualizar
-
-Abra `index.html` diretamente no navegador ou execute um servidor local:
 
 ```powershell
 python -m http.server 8080
@@ -17,4 +16,4 @@ Depois acesse `http://localhost:8080`.
 
 ## Publicar
 
-A pasta pode ser publicada diretamente no GitHub Pages, Vercel ou Netlify. Não é necessário executar build.
+O push na `main` publica no GitHub Pages pelo workflow em `.github/workflows/deploy-pages.yml`.
