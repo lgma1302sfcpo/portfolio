@@ -3,7 +3,8 @@ const mobileNav = document.querySelector('.mobile-nav');
 
 const setMenu = (open) => {
   menuButton.setAttribute('aria-expanded', String(open));
-  menuButton.setAttribute('aria-label', open ? 'Fechar menu' : 'Abrir menu');
+  const en = window.currentLang === 'en';
+  menuButton.setAttribute('aria-label', open ? (en ? 'Close menu' : 'Fechar menu') : (en ? 'Open menu' : 'Abrir menu'));
   mobileNav.classList.toggle('open', open);
   document.body.style.overflow = open ? 'hidden' : '';
 };

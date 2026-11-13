@@ -41,6 +41,11 @@ em { font-family: var(--serif); font-style: italic; font-weight: 400; color: var
 .brand span { display: grid; place-items: center; width: 34px; height: 34px; border-radius: 50%; background: var(--accent); color: #fff; font-size: 13px; }
 .nav { display: flex; gap: 28px; margin-left: auto; font-size: 15px; color: var(--muted); }
 .nav a:hover { color: var(--ink); }
+.lang-bar { width: min(1200px, 100% - 24px); margin: 10px auto 0; display: flex; justify-content: flex-end; padding-right: 10px; }
+.lang-switch { display: inline-flex; padding: 3px; gap: 2px; background: var(--paper); border: 1px solid var(--line); border-radius: 999px; }
+.lang-switch button { border: 0; background: transparent; color: var(--muted); padding: 6px 14px; border-radius: 999px; font: 600 12px var(--mono); letter-spacing: .08em; cursor: pointer; transition: background .2s, color .2s; }
+.lang-switch button:hover { color: var(--ink); }
+.lang-switch button[aria-pressed='true'] { background: var(--ink); color: #fff; }
 .menu-toggle { display: none; width: 42px; height: 42px; border: 0; border-radius: 50%; background: var(--ink); position: relative; }
 .menu-toggle span { position: absolute; left: 13px; right: 13px; height: 2px; background: #fff; transition: transform .25s; }
 .menu-toggle span:first-child { top: 17px; }
@@ -191,6 +196,7 @@ h2 { font-size: clamp(36px, 5vw, 60px); line-height: 1.02; letter-spacing: -.04e
 @media (max-width: 720px) {
   .nav, .topbar > .btn { display: none; }
   .menu-toggle { display: block; margin-left: auto; }
+  .lang-bar { padding-right: 0; justify-content: center; }
   .topbar { padding: 8px 8px 8px 16px; }
   .wrap { width: calc(100% - 32px); }
   .grid, .services, .stack, .edu { grid-template-columns: 1fr; }
